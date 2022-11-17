@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NodeMailer</title>
+    <link rel="stylesheet" href="https://bootswatch.com/5/morph/bootstrap.min.css">
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <br>
+    <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"></div>
+      </div>
+     <div class="container mt-7">
+       
+        <div class="row">
+            <div class="col-md-6">
+                <br>
+                <h4> Como empresa la opinion de nuestros
+                    usuarios es de suma importancias. Es por eso
+                    que debemos saber si nuestra aplicacion cuenta
+                    con algun <p class="text-warning">"bug" o error que afecte la experencia.</p>
+                    <br>
+                    Es por eso que agradeceriamos si tu como usuario 
+                    puedes apoyarnos enviando tu reporte de bug
+                    en caso que encontraras uno, para poder darle solucion
+                    mas adelante.
+                    <br><br>
+                    Para poder enviar tu reporte solo necesitas llenar el formulario
+                    donde inclurias tu <p class="text-danger">Nombre, Correo, Teléfono, Fecha en la que
+                        haces el reporte y un mensaje donde describirás que es 
+                        lo que esta pasando(lo más detallado posible).</p>
+                    <br>
+                    Por ultimo agradeceriamos si tambien cuentas con una sugerencia
+                    que mejore cualquier aspecto de la aplicacion, nos la hicieras llegar
+                    por el mismo formulario.
+                    <br>
+                    ¡Por que para nosotros tu opinion cuenta!<br><br>
+                    <p class="text-info"">-ChattsitoUnU Team</p>
+                  </h4></div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+            <div class="col-md-5">
+                <br><br>
+                <div class="card">
+                    
+                    <div class="card-body">
+                        <p class="text-success"> Reportes o Sugerencias</p>
+                        
+                        <form action="/enviar-correo" method="POST">
+                            
+                            <div class="formgroup">
+                                <input type="text" name="nombre" class="form-control" placeholder="Nombre" autofocus>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" name="correo" placeholder="Correo" class="form-control">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" name="telefono" placeholder="Teléfono" class="form-control">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" name="fecha" placeholder="Fecha DD/MM/AAAA" class="form-control">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <textarea name="mensaje"  rows="2" class="form-control" placeholder="Mensaje a enviar"></textarea>
+                            </div>
+                            <br>
+                            <button class="btn btn-outline-success"">
+                                Enviar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+</body>
+</html>
