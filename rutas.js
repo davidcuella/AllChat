@@ -24,7 +24,7 @@ rutador.post('/enviar-correo', (req,res)=>{
     const CLIENT_ID="15914908594-n7nscj3regu1jpmco91smnit2lp40a7k.apps.googleusercontent.com";
     const CLIENTE_SECRET="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";
     const REDIRECT_URI="https://developers.google.com/oauthplayground";
-    const REFRESH_TOKEN="1//04OdSKTyxZED0CgYIARAAGAQSNwF-L9IrjfRmKw1Y6d0ogGkOKsbc_dOvburfD0ihuzTT8ms8_tXrFKse5ci0gCGL8wD9lMDQStU";
+    const REFRESH_TOKEN="1//04WWvRCkHjMn6CgYIARAAGAQSNwF-L9IrjKfRuE50zyTD_dWMkxQdkFwkv0-HW8mBxt6vBrpmdnzXMDtWBRBI5ADWt_xHyr5NruY";
 
     const oAuth2Client= new google.auth.OAuth2(CLIENT_ID,CLIENTE_SECRET,REDIRECT_URI);
     oAuth2Client.setCredentials({refresh_token:REFRESH_TOKEN});
